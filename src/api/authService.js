@@ -6,6 +6,6 @@ export const loginUser = async (loginData) => {
 };
 
 export const registerUser = async (registerData) => {
-  const response = await axiosInstance.post("/register", registerData);
+  const response = await axiosInstance.post("/save", registerData);
   return response.data;
 };

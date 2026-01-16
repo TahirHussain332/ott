@@ -25,7 +25,7 @@ function Register() {
       localStorage.setItem("token", res.token);
 
       // redirect after registration
-      navigate("/movies");
+      navigate("/login");
     } catch (error) {
       alert("Registration failed. Please try again.");
     }
