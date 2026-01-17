@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { loginUser } from "../api/authService";
 import Background from "../components/Background";
 
@@ -88,7 +88,7 @@ function Login() {
         </div>
 
         <div className="auth-links">
-          <p>Don't have an account? <a href="/register" className="auth-link">Create User</a></p>
+          <p>Don't have an account? <Link to="/register" className="auth-link">Create User</Link></p>
         </div>
       </div>
     </div>
