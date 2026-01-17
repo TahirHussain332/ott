@@ -6,7 +6,7 @@ let stompClient = null;
 // CONNECT
 export const connectSignalingSocket = (roomCode, onMessage) => {
   stompClient = new Client({
-    webSocketFactory: () => new SockJS("http://localhost:9090/ws"),
+    webSocketFactory: () => new SockJS("http://ec2-13-234-67-86.ap-south-1.compute.amazonaws.com:9090/ws"),
     reconnectDelay: 5000,
 
     onConnect: () => {

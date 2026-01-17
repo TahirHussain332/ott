@@ -5,7 +5,7 @@ let stompClient = null;
 
 export const connectWatchPartySocket = (roomCode, onPlaybackEventReceived, onChatMessageReceived) => {
   stompClient = new Client({
-    webSocketFactory: () => new SockJS("http://localhost:9090/ws"),
+    webSocketFactory: () => new SockJS("http://ec2-13-234-67-86.ap-south-1.compute.amazonaws.com:9090/ws"),
     reconnectDelay: 5000,
     debug: (msg) => console.log("STOMP:", msg),
 

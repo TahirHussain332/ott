@@ -74,7 +74,7 @@ function MovieList() {
                             <div
                                 className="featured-background"
                                 style={{
-                                    backgroundImage: `url(${movies[0].thumbnailUrl.startsWith('http') ? movies[0].thumbnailUrl : `http://localhost:8080${movies[0].thumbnailUrl}`})`
+                                    backgroundImage: `url(${movies[0].thumbnailUrl.startsWith('http') ? movies[0].thumbnailUrl : `http://ec2-13-234-67-86.ap-south-1.compute.amazonaws.com:8080${movies[0].thumbnailUrl}`})`
                                 }}
                             >
                                 <div className="featured-overlay"></div>

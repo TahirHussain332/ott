@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosSocket = axios.create({
-  baseURL: "http://localhost:9090",
+  baseURL: "http://ec2-13-234-67-86.ap-south-1.compute.amazonaws.com:9090",
   headers: {
     "Content-Type": "application/json",
   },
