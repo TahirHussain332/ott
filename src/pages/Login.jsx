@@ -88,7 +88,7 @@ function Login() {
         </div>
 
         <div className="auth-links">
-          <p>Don't have an account? <a href="/register" className="auth-link">Create one now</a></p>
+          <p>Don't have an account? <a href="/register" className="auth-link">Create User</a></p>
         </div>
       </div>
     </div>
