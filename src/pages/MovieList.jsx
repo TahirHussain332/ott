@@ -74,7 +74,7 @@ function MovieList() {
                             <div
                                 className="featured-background"
                                 style={{
-                                    backgroundImage: `url(${movies[0].thumbnailUrl.startsWith('http') ? movies[0].thumbnailUrl : `http://ec2-13-234-67-86.ap-south-1.compute.amazonaws.com:8080${movies[0].thumbnailUrl}`})`
+                                    backgroundImage: `url(${movies[0].thumbnailUrl.startsWith('http') ? movies[0].thumbnailUrl : `https://myotttest.duckdns.org${movies[0].thumbnailUrl}`})`
                                 }}
                             >
                                 <div className="featured-overlay"></div>
@@ -138,7 +138,7 @@ function MovieList() {
                                         <div className="movie-poster">
                                             {movie.thumbnailUrl ? (
                                                 <img
-                                                    src={movie.thumbnailUrl.startsWith('http') ? movie.thumbnailUrl : `http://localhost:8080${movie.thumbnailUrl}`}
+                                                    src={movie.thumbnailUrl.startsWith('http') ? movie.thumbnailUrl : `https://myotttest.duckdns.org${movie.thumbnailUrl}`}
                                                     alt={movie.title}
                                                     className="movie-thumbnail"
                                                     onError={(e) => {
